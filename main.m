@@ -5,7 +5,9 @@
 %     Long Chen <long.chen@tum.de>
 
 %clear, clc;
-
+addpath("gdam_solvers\");
+addpath("problems\");
+addpath("utils\");
 % problem_type
 %   1. box-constrained linear least squares
 %   2. convex quadratic programming with equality, inequality, and bound

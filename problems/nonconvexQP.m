@@ -89,7 +89,7 @@ alpha_min = 1e-4;
 zeta = 0.999;
 mu = 0.99;
 tic
-[x_GDAMnag_1, fval_GDAMnag_1, iter_GDAMnag_1] = gdaM_nag_box_QP(Q,c,x0,lb,ub, alpha_min,zeta, mu);
+[x_GDAMnag_1, fval_GDAMnag_1, iter_GDAMnag_1] = gdam_nag_box_QP(Q,c,x0,lb,ub, alpha_min,zeta, mu);
 t_GDAMnag_1 = toc;
 msg = ['Runtime (s): ', num2str(t_GDAMnag_1)];
 disp(msg);

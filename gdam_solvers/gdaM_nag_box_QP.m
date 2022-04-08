@@ -4,7 +4,7 @@
 %
 %     Long Chen <long.chen@tum.de>
 %
-function [x, f, loop] = gdaM_nag_box_QP(Q,c,x0,lb,ub, alpha_min,zeta, mu)
+function [x, f, loop] = gdam_nag_box_QP(Q,c,x0,lb,ub, alpha_min,zeta, mu)
 % Initialization
 gamma = 5;    % Initial step size
 gamma_min = alpha_min; % minimum step size
