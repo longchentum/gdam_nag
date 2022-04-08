@@ -106,7 +106,8 @@ while loop <= max_iter
             if (f>f_last)
                 gamma= gamma* adapt^2;
             end
-        elseif abs((f-f_last)/f) < 1e-1
+        end
+        if abs((f-f_last)/f) < 1e-1
             gamma = gamma_0*adapt;
             yt =xt;
             flag_recompute = false;
