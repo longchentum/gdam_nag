@@ -105,7 +105,7 @@ disp('GDAM+NAG, zeta = 0.99');
 zeta = 0.99;
 mu = 0.99;
 tic
-[x_GDAMnag_2, fval_GDAMnag_2, iter_GDAMnag_2] = gdaM_nag_box_QP(Q,c,x0,lb,ub, alpha_min,zeta,mu);
+[x_GDAMnag_2, fval_GDAMnag_2, iter_GDAMnag_2] = gdam_nag_box_QP(Q,c,x0,lb,ub, alpha_min,zeta,mu);
 t_GDAMnag_2 = toc;
 msg = ['Runtime (s): ', num2str(t_GDAMnag_2)];
 disp(msg);
